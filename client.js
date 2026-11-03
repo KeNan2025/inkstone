@@ -469,12 +469,12 @@ window.__ModuleLoader__.load({
                   '。'
                 ),
                 E(
-                  'olw-steps',
-                  {},
-                  E('span', {}, '浏览器打开 ', E('a', { className: 'is-link', href: 'https://latex.cstcloud.cn/project', target: '_blank', rel: 'noopener' }, 'latex.cstcloud.cn'), ' 并确认已登录'),
-                  E('span', {}, '按 ', E('strong', {}, 'F12'), ' → ', E('strong', {}, 'Application'), ' → ', E('strong', {}, 'Cookies'), ' → ', E('strong', {}, 'https://latex.cstcloud.cn')),
-                  E('span', {}, '找到 ', E('strong', {}, 'overleaf.sid'), '，双击 Value 全选复制'),
-                  E('span', {}, '粘贴到下面，点「保存并验证」')
+                  'ol',
+                  { className: 'is-steps' },
+                  E('li', {}, '浏览器打开 ', E('a', { className: 'is-link', href: 'https://latex.cstcloud.cn/project', target: '_blank', rel: 'noopener' }, 'latex.cstcloud.cn'), ' 并确认已登录'),
+                  E('li', {}, '按 ', E('strong', {}, 'F12'), ' → ', E('strong', {}, 'Application'), ' → ', E('strong', {}, 'Cookies'), ' → ', E('strong', {}, 'https://latex.cstcloud.cn')),
+                  E('li', {}, '找到 ', E('strong', {}, 'overleaf.sid'), '，双击 Value 全选复制'),
+                  E('li', {}, '粘贴到下面，点「保存并验证」')
                 ),
                 E('textarea', {
                   className: 'is-area',
