@@ -1,0 +1,6 @@
+# Bundle patch for 砚台 · Inkstone.
+# Host half registers the /api/dsh-overleaf route family; the Client half mounts
+# the sidebar row and the main-slot page under the same id.
+- insert:
+    - id: inkstone
+      name: dsh-inkstone

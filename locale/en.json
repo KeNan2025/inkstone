@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Inkstone",
+    "description": "Draft locally, publish from the cloud. Sync a LaTeX project folder to latex.cstcloud.cn, compile it there, and return diagnostics for the agent to fix. No local TeX required."
+  }
+}

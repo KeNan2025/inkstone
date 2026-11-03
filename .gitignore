@@ -1,0 +1,21 @@
+# Session state, local credentials and compile output never belong in the repo.
+.overleaf-workbench/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Tests may write temporary fixtures
+tests/.tmp/

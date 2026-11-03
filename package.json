@@ -1,0 +1,62 @@
+{
+  "name": "dsh-inkstone",
+  "version": "1.0.0",
+  "description": "Inkstone — sync a local LaTeX project to CSTCloud Overleaf, compile it there, and return diagnostics for the agent to fix. No local TeX required. 本地起笔，云端成书。",
+  "type": "module",
+  "license": "MIT",
+  "author": "KeNan2025",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "overleaf",
+    "latex",
+    "thesis",
+    "cstcloud"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeNan2025/inkstone.git"
+  },
+  "homepage": "https://github.com/KeNan2025/inkstone#readme",
+  "bugs": {
+    "url": "https://github.com/KeNan2025/inkstone/issues"
+  },
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}

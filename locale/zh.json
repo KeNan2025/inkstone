@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "砚台 · Inkstone",
+    "description": "本地起笔，云端成书。选定 LaTeX 项目文件夹，同步到 latex.cstcloud.cn 并在服务器编译，编译错误回传给智能体修改，无需本地 TeX。"
+  }
+}
