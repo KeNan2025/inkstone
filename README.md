@@ -6,6 +6,8 @@
 
 > 砚台不替人执笔，只把素材研成可用的样子。
 
+> **两个形态**：这是带可视化面板的 **DSH 插件**。如果你希望智能体直接读写编译诊断、不需要点按钮，用 [inkstone-skill](https://github.com/KeNan2025/inkstone-skill)（skill 形态，零依赖 CLI）。两者可以同时装，共用同一个 Overleaf 账号。
+
 ---
 
 ## 安装
